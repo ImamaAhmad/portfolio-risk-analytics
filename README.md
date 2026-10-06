@@ -4,15 +4,15 @@
 
 **Portfolio Risk Lab** is an interactive quantitative-finance project investigating whether historical portfolio optimization results remain convincing when tested against **unseen market data**.
 
-🚀 **[Launch the Portfolio Risk Lab Dashboard](https://portfolio-risk-analytics-project.streamlit.app/)**
+**[Launch the Portfolio Risk Lab Dashboard](https://portfolio-risk-analytics-project.streamlit.app/)**
 
 The project combines portfolio optimization, statistical risk analysis, diversification analysis, out-of-sample validation, and hypothetical stress testing into an interactive Streamlit application.
 
 ---
 
-## 🔬 Research Question
+## Research Question
 
-> **Does maximizing historical risk-adjusted return produce a portfolio that performs robustly on unseen market data?**
+> Does maximizing historical risk-adjusted return produce a portfolio that performs robustly on unseen market data?
 
 Instead of treating the portfolio with the highest historical Sharpe ratio as automatically superior, this project asks a more important question:
 
@@ -20,7 +20,7 @@ Instead of treating the portfolio with the highest historical Sharpe ratio as au
 
 ---
 
-## 📊 What This Project Does
+## What This Project Does
 
 The project follows a complete quantitative research workflow:
 
@@ -40,7 +40,7 @@ The project follows a complete quantitative research workflow:
 
 ---
 
-## 🧺 Asset Universe
+## Asset Universe
 
 The analysis uses six diversified ETF-based asset proxies:
 
@@ -57,7 +57,7 @@ These instruments are used as **research proxies**, not investment recommendatio
 
 ---
 
-# 🧠 Methodology
+# Methodology
 
 ## 1. Historical Data
 
@@ -94,7 +94,7 @@ These results provide a starting point for understanding the risk-return charact
 
 ---
 
-# 📈 Portfolio Construction
+# Portfolio Construction
 
 Two main portfolios are compared.
 
@@ -112,7 +112,7 @@ The optimization is constrained to long-only positions.
 
 ---
 
-# 🏆 In-Sample Results
+# In-Sample Results
 
 The equal-weight portfolio produced:
 
@@ -138,7 +138,7 @@ That distinction motivates the out-of-sample analysis.
 
 ---
 
-# 🔎 The Optimization Result
+# The Optimization Result
 
 The historical optimization allocated approximately:
 
@@ -161,7 +161,7 @@ This highlights an important limitation of optimization:
 
 ---
 
-# ⚠️ Portfolio Risk Analysis
+# Portfolio Risk Analysis
 
 The project evaluates risk using several complementary measures.
 
@@ -171,7 +171,7 @@ The historical **95% daily VaR** was:
 
 **−1.14%**
 
-This represents a historical threshold for losses in the lower tail of the observed daily-return distribution.
+This represents a historical threshold for losses in the lower 5% of the observed daily-return distribution.
 
 ### Conditional Value at Risk
 
@@ -191,7 +191,7 @@ This measures the largest peak-to-trough decline experienced by the portfolio du
 
 ---
 
-# 🧪 Out-of-Sample Validation
+# Out-of-Sample Validation
 
 One of the central features of this project is the separation between **training data and unseen test data**.
 
@@ -215,7 +215,7 @@ when moving from the historical optimization environment to unseen data.
 
 ---
 
-# 💡 Main Finding
+# Main Finding
 
 The most important result of the project is **not** that optimization produced a Sharpe ratio above 1.
 
@@ -237,27 +237,27 @@ The result highlights the importance of:
 
 ---
 
-# 🌐 Interactive Dashboard
+# Interactive Dashboard
 
 The entire analysis is presented through an interactive Streamlit dashboard.
 
-### Explore the live application:
+### Live Application
 
-**[🚀 Portfolio Risk Lab · Streamlit](https://portfolio-risk-analytics-project.streamlit.app/)**
+**[Portfolio Risk Lab — Streamlit](https://portfolio-risk-analytics-project.streamlit.app/)**
 
 The dashboard includes:
 
-* 📈 Portfolio performance
-* 📊 Risk metrics
-* 🔗 Asset correlation analysis
-* 🎯 Portfolio optimization
-* 🌐 Efficient-frontier simulations
-* 🧪 Out-of-sample validation
-* ⚡ Portfolio stress testing
+* Portfolio performance
+* Risk metrics
+* Asset correlation analysis
+* Portfolio optimization
+* Efficient-frontier simulations
+* Out-of-sample validation
+* Portfolio stress testing
 
 ---
 
-# ⚡ Stress Testing
+# Stress Testing
 
 The dashboard includes hypothetical scenario analysis to explore how different portfolio structures could react to extreme conditions.
 
@@ -281,9 +281,9 @@ Their purpose is to examine portfolio sensitivity under alternative market condi
 
 ---
 
-# 🌐 Efficient Frontier
+# Efficient Frontier
 
-The dashboard also generates thousands of randomly weighted portfolios and plots their estimated risk-return characteristics.
+The dashboard generates thousands of randomly weighted portfolios and plots their estimated risk-return characteristics.
 
 This creates an interactive visualization of the portfolio opportunity set.
 
@@ -291,7 +291,7 @@ The equal-weight and optimized portfolios are highlighted to show where they sit
 
 ---
 
-# 🛠️ Technology Stack
+# Technology Stack
 
 The project was built using:
 
@@ -308,7 +308,7 @@ The project was built using:
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 ```text
 portfolio-risk-analytics/
@@ -338,7 +338,7 @@ portfolio-risk-analytics/
 
 ---
 
-# 🚀 Running the Project Locally
+# Running the Project Locally
 
 Clone the repository and enter the project directory:
 
@@ -375,7 +375,7 @@ The application should then open in your browser.
 
 ---
 
-# ⚠️ Limitations
+# Limitations
 
 This project is an educational quantitative-finance analysis and **not investment advice**.
 
@@ -394,7 +394,7 @@ These limitations are important because they prevent the results from being inte
 
 ---
 
-# 🎯 Conclusion
+# Conclusion
 
 Portfolio optimization can produce an attractive historical risk-return profile.
 
@@ -412,7 +412,7 @@ Therefore, the central lesson of Portfolio Risk Lab is:
 
 ---
 
-## 📌 Project Status
+# Project Status
 
 **Completed**
 
@@ -431,3 +431,4 @@ The project includes:
 * [x] Stress testing
 * [x] Interactive Streamlit dashboard
 * [x] Reproducible environment
+* [x] Project documentation
